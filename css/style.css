@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.ubuntu_font {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color: #141313;
+    --text-color: #777777;  
+    --border-color: #201f1f17;  
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+}
+
+.debug{
+    border: 2px solid red;
+}
+
+.text_style{
+    font: normal bold 50px/ 72px "ubuntu_font";
+}
+
+.text_uppercase{
+       text-transform: uppercase
+}
+
+.button{
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px "ubuntu_font";
+    border: 3px solid transparent;
+    border-radius: 4px;
+    position: relative;
+}
+
+.primary-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background 400ms ease;
+    box-shadow: var(--box-shadow);
+}
+
+.primary-button:hover{
+    background: white;
+    background-clip: padding-box;
+    color: black;
+}
+
+p.para{
+    color: var(--text-color);
+    font: normal 500 16px/25px "ubuntu_font";
+}
+
+/* because we want gradient border while hovering and we are faking a border here*/
+.button.primary-button::after,.secondary-button::after{
+    position: absolute;
+    inset: -2px;
+    background: var(--gradient-color);
+    content: "";
+    z-index: -1;
+    border-radius: 4px;
+}
+
+.secondary-button{
+    background: white;
+    background-clip: padding-box;
+    transition: background 400ms ease;
+}
+
+.secondary-button:hover{
+    background: var(--gradient-color);
+    color: whitesmoke;
+    box-shadow: var(--box-shadow);
+}
+
+
+
+
+/* header style */
+.main_menu .navbar .navbar-brand{
+    padding: 0 2rem 0.5rem 5rem;
+}
+
+.main_menu .navbar{
+    padding: 1rem 20rem;
+}
+
+.main_menu .navbar .navbar-nav .nav-item .nav-link{
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 18px;
+    padding-right: 1.7rem;
+    text-transform: uppercase;
+}
+
+.main_menu .navbar .navbar-nav .active{
+    background: var(--gradient-color) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+.main_menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* banner section */
+.banner_section{
+    background: url(../assets/banner-bg.png) no-repeat 35% 50%;
+}
+
+.banner_section .banner_subtitle{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.banner_section .banner_subtitle::after{
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background-color: black;
+    display: inline-block;
+    margin-left: 1%;
+    transform: translateY(-5px);
+}
+
+.banner_section .banner_title{
+    font-size: 5rem;
+}
+
+.banner_section .banner_education{
+    font-size: 1.5rem;
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.banner_section .banner_img img{
+    padding: 7rem 0;
+    width: 35rem;
+}
+
+/* about us style */
+.about_us_section{
+    padding: 0 5rem;
+}
+
+.about_us_section h2>span{
+    display: block;
+    font: normal bold 50px/ 60px "ubuntu_font";
+    letter-spacing: 21px
+}
+
+.about_us_section .about_title .paragraph > p{
+    padding: .4rem 0;
+}
+
+.about_us_section .paragraph{
+    margin-top: -15px;
+}
