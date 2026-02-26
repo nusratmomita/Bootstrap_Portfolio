@@ -157,10 +157,6 @@ p.para{
 }
 
 /* about us style */
-.about_us_section{
-    padding: 0 5rem;
-}
-
 .about_us_section h2>span{
     display: block;
     font: normal bold 50px/ 60px "ubuntu_font";
@@ -173,4 +169,186 @@ p.para{
 
 .about_us_section .paragraph{
     margin-top: -15px;
+}
+
+/* brand  style*/
+.brand_section{
+    padding: 5rem 0;
+    margin-bottom: 4rem;
+}
+
+.brand_section .first_row .col-lg-4{
+    display: flex;
+    justify-content: center;
+}
+
+.brand_section .first_row .col-lg-4 .single_brand{
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: 0.9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 400ms ease;
+}
+
+.brand_section .first_row .col-lg-4 .single_brand img{
+    width: 50%;
+}
+
+.brand_section .first_row .col-lg-4 .single_brand:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+.brand_section .first_row .col-lg-4 .single_brand:hover img{
+    filter: brightness(0.15);
+}
+
+.brand_section .experience_area{
+    padding: 1rem;
+    position: relative;
+}
+
+.brand_section .experience_area span{
+    display: block;
+}
+
+.brand_section .experience_area .years_area{
+    background: url(../assets/brand-right-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40px;
+    height: 18rem;
+    padding-left: 10rem;
+}
+
+.bg_panel{
+    position: absolute !important;
+    left: -190px !important; top: 0% !important;
+    background: #e029290a !important;
+    width: 400px !important;
+    height: 400px !important;
+    margin-left: 340px !important;
+    z-index: -1 !important;
+}
+
+.brand_section .experience_area .years_area .years{
+    font: normal bold 84px/40px "ubuntu_font";
+    color: var(--primary-color2);
+    z-index: 2;
+}
+
+.brand_section .experience_area .years_area h2 > span{
+    font: normal 600 22px/30px "ubuntu_font";
+}
+
+.brand_section .experience_area .call_area{
+    padding-left: 10rem;
+}
+
+/* services style */
+.services_section{
+    padding: 5rem 0;
+}
+
+.services_section .service_text{
+    padding: 0 22rem;
+}
+
+.services_section .title_text{
+    font-size: 35px;
+}
+
+.services_section .service{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem;
+    margin: 5rem .5rem;
+    transition: box-shadow 400ms ease;
+}
+
+.services_section .service:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/* contact form style */
+.contact_form_section{
+    padding: 5rem 0;
+    background-color: var(--primary-color2);
+}
+
+.phone_info,.email_info{
+    background-color: rgba(248, 252, 253, 0.973);
+    width: 50%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.phone_info i,.email_info i{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.email_info{
+    margin-top: 15px;
+}
+
+.phone_no,.email-add{
+    font-weight: 400 !important;
+    font-size: 25px !important; 
+}
+
+.sm_info{
+    margin-top: 30px;
+}
+
+.sm_info i{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    border: 1px solid transparent;
+    margin-right: 15px;
+    transition: all 400ms ease;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sm_info i:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.send_btn{
+    margin-top: 20px;
+    width: 25%;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    font-size: 20px;
+    border: 1px solid transparent;
+    transition: all 400ms ease;
+}
+
+.send_btn:hover{
+    border: 1px solid white;
+    color: white;
+}
+
+/* footer style */
+footer{
+    background-color: black;
+    border: 3px solid transparent;
+}
+
+.copy_right_text{
+    color: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
