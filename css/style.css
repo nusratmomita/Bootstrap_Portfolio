@@ -352,3 +352,29 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+
+
+/* responsive */
+@media (max-width: 479px){
+    .main_menu .navbar .navbar-brand{
+        padding: 0;
+    }
+
+    .main_menu .navbar{
+        padding: 0;
+    }
+
+    .banner_section .banner_subtitle{
+        font-size: 2rem;
+    }
+
+    .banner_section .banner_title{
+        font-size: 2rem;
+    }
+
+    .banner_education{
+        font-size: 1rem;
+        border:  2px solid red;
+    }
+}
